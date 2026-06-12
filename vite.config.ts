@@ -4,11 +4,10 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 import path from 'node:path'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
-  plugins: [
-    react(),
-    babel({ presets: [reactCompilerPreset()] }),
-  ],
+  plugins: [react(), babel({ presets: [reactCompilerPreset()] }), cloudflare()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
