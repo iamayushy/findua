@@ -22,7 +22,7 @@
 - Could have done prefetching the links on hovering the card which could have resulted in faster pdp page of each product.
 - One more thing we are missing if common components like the add and reduce button could have build it once used it anaywere via props.
 - Empty state if no items found is something missing currenlty showing blank page
-
+- Skeleton Loader for each section to make it more interactive
 
 ### Features With Assumption:
 - I added search and category base filtering which seems obvious since its and ecommerce application
