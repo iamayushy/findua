@@ -36,7 +36,7 @@ const ProductListing = () => {
 
     return (
         <div className="product-listing-page">
-            <aside className="sidebar">
+            <div className="sidebar">
                 <h3 className="sidebar-title">Categories</h3>
                 <ul className="category-list">
                     <li
@@ -55,8 +55,9 @@ const ProductListing = () => {
                         </li>
                     ))}
                 </ul>
-            </aside>
-            <main className="main-content">
+            </div>
+            <div className="main-content">
+                
                 <section className="products">
                     {filteredProducts?.map((item: any, index: number) => (
                         <ProductCard
@@ -73,7 +74,7 @@ const ProductListing = () => {
                         />
                     ))}
                 </section>
-            </main>
+            </div>
         </div>
     );
 };

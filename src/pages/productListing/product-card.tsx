@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import { useCart } from "@/store/CartContext";
 import { getProductStock } from "@/data/inventory";
 import type { FC } from "react";
+import { StarIcon } from "lucide-react";
 
 interface IProductCard {
     id: number;
@@ -65,7 +66,7 @@ const ProductCard: FC<IProductCard> = ({ id, title, price, image, category, desc
                 <h4 className="product-title">{title}</h4>
                 {rating && (
                     <div className="rating">
-                        <span className="star-icon">★</span>
+                        <StarIcon size={16} fill="goldenrod" stroke="goldenrod"/>
                         <span className="rate">{rating.rate}</span>
                         <span className="count">({rating.count} reviews)</span>
                     </div>
