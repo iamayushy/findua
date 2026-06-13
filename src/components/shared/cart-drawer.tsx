@@ -2,6 +2,7 @@ import { X, Plus, Minus, Trash2 } from 'lucide-react';
 import { useCart } from '@/store/CartContext';
 import { Button } from '@/components/ui/button';
 import { getProductStock } from '@/data/inventory';
+import "@/styles/ui/cart-drawer.scss";
 
 export function CartDrawer() {
   const {

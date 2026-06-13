@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ApplicationRoutes from "@/router";
 import { CartProvider } from "@/store/CartContext";
-import { CartDrawer } from "@/components/ui/cart-drawer";
+import { CartDrawer } from "@/components/shared/cart-drawer";
 
 const queryClient = new QueryClient({
   defaultOptions: {

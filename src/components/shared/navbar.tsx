@@ -3,6 +3,7 @@ import { useSearchParams, useNavigate, useLocation } from 'react-router';
 import { ShoppingCart, Search } from 'lucide-react';
 import Input from '@/components/ui/input';
 import { useCart } from '@/store/CartContext';
+import "@/styles/ui/navbar.scss";
 
 export function Navbar() {
   const [searchParams, setSearchParams] = useSearchParams();

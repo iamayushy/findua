@@ -1,4 +1,5 @@
 import React from 'react';
+import "@/styles/ui/input.scss";
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   ref?: React.Ref<HTMLInputElement>;

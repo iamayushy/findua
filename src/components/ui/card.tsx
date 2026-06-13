@@ -1,4 +1,5 @@
 import React from 'react';
+import "@/styles/ui/card.scss";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   ref?: React.Ref<HTMLDivElement>;

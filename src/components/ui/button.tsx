@@ -1,4 +1,5 @@
 import React from 'react';
+import "@/styles/ui/button.scss";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ref?: React.Ref<HTMLButtonElement>;
