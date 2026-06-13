@@ -18,9 +18,15 @@
 ## Q2. What you would clean up or do differently with more time ?
 
 - Styles:  I could have created base classes for the styles like .flex-row, .flex-col, .items-center, .justify-center etc. in which is more of like how tailwind works, so it would be easier to write styles and also maintain the code structure.
+- Mobile Screen optimization currently it looks very avg this could have been done in better way, like having the add to cart button on the bottom like a drawer
 - Could have done prefetching the links on hovering the card which could have resulted in faster pdp page of each product.
 - One more thing we are missing if common components like the add and reduce button could have build it once used it anaywere via props.
+- Empty state if no items found is something missing currenlty showing blank page
 
+
+### Features With Assumption:
+- I added search and category base filtering which seems obvious since its and ecommerce application
+- Added the + and - action button on each page also persisted across the application
 
 ## Library Used:
 1. React
