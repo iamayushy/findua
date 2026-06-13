@@ -7,8 +7,9 @@
     padding: 2rem;
 
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 1.5rem;
+        padding: 1rem;
     }
 
     .sidebar {
@@ -22,6 +23,10 @@
         @media (max-width: 768px) {
             position: relative;
             top: 0;
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            padding: 1rem;
         }
 
         .sidebar-title {
@@ -43,8 +48,17 @@
 
             @media (max-width: 768px) {
                 flex-direction: row;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
                 gap: 8px;
+                padding-bottom: 4px;
+                
+                /* hide scrollbar for clean UI */
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
 
             .category-item {
@@ -55,6 +69,7 @@
                 text-transform: capitalize;
                 color: var(--text);
                 user-select: none;
+                white-space: nowrap;
 
                 &:hover {
                     background-color: var(--primary-light);

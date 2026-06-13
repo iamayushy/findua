@@ -169,6 +169,12 @@
     .pdp-actions {
       margin-top: 1rem;
 
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
       .add-to-cart-btn {
         width: 100%;
         max-width: 300px;
