@@ -7,7 +7,7 @@ const CartDrawer = lazy(() => import("@/components/shared/cart-drawer"));
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      refetchOnWindowFocus: false,
+      refetchOnWindowFocus: false, 
 
       retry: (failureCount, error: any) => {
         if (error?.response?.status >= 400 && error?.response?.status < 500) {
